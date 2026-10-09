@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 15px;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  color: #e2e8f0;
+  margin: 0 0 8px 0;
+}
+
+.dashboard-header p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.metric-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.metric-value-container {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.metric-unit {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.metric-status-bar {
+  height: 4px;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.dashboard-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #cbd5e1;
+}
+
+.table-container {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.table-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.search-input, .filter-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.services-table th, .services-table td {
+  padding: 12px;
+  border-bottom: 1px solid #334155;
+}
+
+.services-table th {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.service-name {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.running { background-color: #065f46; color: #34d399; }
+.status-badge.degraded { background-color: #78350f; color: #fbbf24; }
+.status-badge.stopped { background-color: #7f1d1d; color: #f87171; }
